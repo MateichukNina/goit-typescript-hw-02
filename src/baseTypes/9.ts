@@ -21,3 +21,14 @@ const page2 = {
 }
 
 export {};
+
+type Page = {
+  title: string,
+  likes: number,
+  accounts: string[],
+  status: "open" | "close";
+  details?:{
+    createAt: Date,
+    update: Date,
+  }
+}
